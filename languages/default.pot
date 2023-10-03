@@ -1,0 +1,94 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-09-26 11:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: yrbane <yrbane@nethttp.net>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: nethttp.net-contact.php\n"
+
+#. Author of the plugin
+msgid "Barney <yrbane@nethttp.net>"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:439
+msgid "Base plugin"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:449
+msgid "Base Plugin Documentation"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:128
+msgid "Don't show this message again"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:241
+msgid "for more information and updates."
+msgstr ""
+
+#: nethttp.net-base-plugin.php:450
+msgid "Here is the documentation for the Base Plugin."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/yrbane"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/yrbane/nethttp.net-base-plugin"
+msgstr ""
+
+#. Name of the plugin
+msgid "nethttp.net-base-plugin"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:331
+msgid "Plugin deactivated."
+msgstr ""
+
+#: nethttp.net-base-plugin.php:126
+msgid "Settings"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:123
+msgid "Thank you for installing the "
+msgstr ""
+
+#: nethttp.net-base-plugin.php:241
+msgid "Thank you for installing the plugin!"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The WordPress plugin \"BasePlugin\" is a foundational class designed to "
+"streamline the development of custom plugins for WordPress. It provides an "
+"organized structure and essential features for rapidly creating custom "
+"extensions. This class simplifies translation management, activation message "
+"display, and offers a robust foundation for adding plugin-specific "
+"functionality. Developers can extend this class by creating a child class to "
+"implement project-specific features, all while benefiting from a well-"
+"documented and ready-to-use structure."
+msgstr ""
+
+#: nethttp.net-base-plugin.php:124
+msgid "To configure the plugin settings, please visit the"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:451
+msgid "To use and extend the Base Plugin in your own plugin"
+msgstr ""
+
+#: nethttp.net-base-plugin.php:241
+msgid "Visit our"
+msgstr ""
