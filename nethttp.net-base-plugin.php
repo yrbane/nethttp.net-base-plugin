@@ -3,7 +3,7 @@
 /**
  * Plugin Name: nethttp.net-base-plugin
  * Plugin URI: https://github.com/yrbane/nethttp.net-base-plugin
- * Description: The WordPress plugin "BasePlugin" is a foundational class designed to streamline the development of custom plugins for WordPress. It provides an organized structure and essential features for rapidly creating custom extensions. This class simplifies translation management, activation message display, and offers a robust foundation for adding plugin-specific functionality. Developers can extend this class by creating a child class to implement project-specific features, all while benefiting from a well-documented and ready-to-use structure. 
+ * Description: This WordPress plugin is a foundational class designed to streamline the development of custom plugins for WordPress. It provides an organized structure and essential features for rapidly creating custom extensions. This class simplifies translation management, activation message display, and offers a robust foundation for adding plugin-specific functionality. Developers can extend this class by creating a child class to implement project-specific features, all while benefiting from a well-documented and ready-to-use structure. 
  * Version: 1.0.0
  * Author: Barney <yrbane@nethttp.net>
  * Author URI: https://github.com/yrbane
@@ -80,17 +80,11 @@ class BasePlugin
         ob_start();
         $this->current_classname = get_class($this);
         $this->plugin_file = $file;
-
-        $this->set_locale();
-
-        // Generate a unique form token for each session
-        $this->generate_form_token();
-
-        $this->verifyPluginRequirements();
-
         $this->slug = sanitize_title($this->plugin_name);
 
-        
+        $this->set_locale();
+        $this->generate_form_token();
+        $this->verifyPluginRequirements();
 
         $this->activation_message = sprintf(
             '<div class="notice notice-success is-dismissible custom-activation-message">
@@ -292,12 +286,12 @@ class BasePlugin
      */
     protected function add_hooks(): void
     {
+        // Load translation files
+        add_action('init', array($this, 'loadTranslations'));
+        
         // Activation and Deactivation Hooks
         register_activation_hook($this->plugin_file, array($this, 'onActivation'));
         register_deactivation_hook($this->plugin_file, array($this, 'onDeactivation'));
-
-        // Load translation files
-        add_action('init', array($this, 'loadTranslations'));
 
         // Display admin notices
         add_action('admin_notices', array($this, 'activation_message'));
